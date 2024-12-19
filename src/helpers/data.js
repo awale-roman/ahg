@@ -105,7 +105,7 @@ const products = [
         price: 0,
         qty: 0,
         colors: ['blue', 'green', 'red', 'yellow'],
-        images: ['AntiqueOxCheppuWoodenmask.jpg']
+        images: ['antiqueOxCheppuWoodenMask.jpg']
     },
     {
         id: 11,
