@@ -61,7 +61,7 @@ const products = [
         price: 0,
         qty: 0,
         colors: ['Copper Glow'],
-        images: ['woodenLordGaneshMask.jpg']
+        images: ['WoodenLordGaneshMask.jpg']
     },
     {
         id: 7,
@@ -72,7 +72,7 @@ const products = [
         price: 0,
         qty: 0,
         colors: ['blue'],
-        images: ['bluewoodenGaneshMask.jpg']
+        images: ['BluewoodenGaneshMask.jpg']
     },
     {
         id: 8,
@@ -83,7 +83,7 @@ const products = [
         price: 0,
         qty: 0,
         colors: ['red'],
-        images: ['woodenRedGaneshMask.jpg']
+        images: ['WoodenRedGaneshMask.jpg']
     },
     {
         id: 9,
@@ -94,7 +94,7 @@ const products = [
         price: 0,
         qty: 0,
         colors: ['blue', 'green', 'red', 'yellow'],
-        images: ['woodenGaneshMask.jpg']
+        images: ['WoodenGaneshMask.jpg']
     },
     {
         id: 10,
