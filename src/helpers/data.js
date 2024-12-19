@@ -7,7 +7,7 @@ const products = [
         title: "Mantra Mandala",
         details: "",
         size: "22cm x 22cm",
-        price: 0,
+        price: 1500,
         qty: 0,
         colors: ['blue', 'green', 'orange', 'Plumwood'],
         images: ['mantra1.jpg','mantra2.jpg','mantra3.jpg','mantra4.jpg']
@@ -17,17 +17,17 @@ const products = [
         title: "Om Mandala",
         details: "",
         size: "22cm x 22cm",
-        price: 0,
+        price: 1500,
         qty: 0,
         colors: ['blue', 'lightblue', 'orange'],
-        images: ['om1.png','om2.jpg','om3.jpg']
+        images: ['om1.jpg','om2.jpg','om3.jpg']
     },
     {
         id: 3,
         title: "Kala Chakra Mandala",
         details: "",
         size: "50cm x 50cm",
-        price: 0,
+        price: 8000,
         qty: 0,
         colors: ['gold', 'silver'],
         images: ['kalagold.png','kalasilver.jpg']
@@ -37,7 +37,7 @@ const products = [
         title: "Jambala With Brocate",
         details: "",
         size: "50cm x 50cm",
-        price: 0,
+        price: 2500,
         qty: 0,
         colors: ['red'],
         images: ['jambala.jpg']
