@@ -72,7 +72,7 @@ const products = [
         price: 0,
         qty: 0,
         colors: ['blue'],
-        images: ['BluewoodenGaneshMask.jpg']
+        images: ['bluewoodenGaneshMask.jpg']
     },
     {
         id: 8,
@@ -116,7 +116,7 @@ const products = [
         price: 0,
         qty: 0,
         colors: ['blue', 'green', 'red', 'yellow'],
-        images: ['woodenGarudaMask.jpg']
+        images: ['WoodenGarudaMask.jpg']
     },
     {
         id: 12,
@@ -127,7 +127,7 @@ const products = [
         price: 0,
         qty: 0,
         colors: ['red'],
-        images: ['RedBhairavwoodenMask.jpg']
+        images: ['RedBhairavWoodenMask.jpg']
     },
 ]
 
