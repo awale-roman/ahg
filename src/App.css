@@ -102,9 +102,9 @@ img {
 }
 .product-list {
   display: grid;
-  gap: 16px;
+  gap: 1.75rem;
   padding: 40px 0;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 7rem), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr));
 }
 .product-list a {
   text-decoration: none;
