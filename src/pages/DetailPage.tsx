@@ -78,8 +78,9 @@ const DetailPage = () => {
             <div className="product-info">
 
             <p className="name">{capitalizeFirstLetter(selectedProduct?.title || '')}</p>
-            <p className="size">Size: ({selectedProduct?.size})</p>
-            <p className="price">Rs {selectedProduct?.price}</p>
+            <p className="size">Size: {selectedProduct?.size}</p>
+              <p className="price">Rs {selectedProduct?.price}</p>
+              <p className="detail">{ selectedProduct?.details}</p>
             <div className="counter">
               <p className="quantity">Quantity</p>
               <div className="counter-handle">
@@ -88,7 +89,7 @@ const DetailPage = () => {
               {counter} 
               <button onClick={()=>{handleIncrement(selectedProduct.qty)}} disabled={increaseButtonDisability}><FaPlus /></button>  </div>
               </div>
-            <p className="rate">{'Total Price: ' + calculateTotal(selectedProduct.price, counter)}</p>
+            <p className="rate">{'Total Price: Rs ' + calculateTotal(selectedProduct.price, counter)}</p>
             </div>
      </div>
                 </div>

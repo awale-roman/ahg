@@ -33,7 +33,7 @@ const ProductList: React.FC<ProductListProps> = ({products}) =>{
 
             <div className="product-summary">
             <p className="name">{capitalizeFirstLetter(product.title)}</p>
-            <p className="size">{"Size: " +  product.size + " cm"}</p>
+            <p className="size">{"Size: " +  product.size}</p>
             <p className="price">{"Rs " + product.price}</p>
             </div>
                 </div>
