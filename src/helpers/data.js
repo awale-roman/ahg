@@ -37,7 +37,7 @@ const products = [
         title: "Jambala With Brocate",
         details: "Jambala with brocade is a depiction of the wealth deity Jambala, adorned with intricate brocade fabric. It symbolizes prosperity, abundance, and spiritual wealth, often used in Tibetan Buddhist practices.",
         size: "50cm x 50cm",
-        price: 2500,
+        price: 25000,
         qty: 0,
         colors: ['red'],
         images: ['jambala.jpg']
