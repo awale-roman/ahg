@@ -78,7 +78,8 @@ const DetailPage = () => {
             <div className="product-info">
 
             <p className="name">{capitalizeFirstLetter(selectedProduct?.title || '')}</p>
-            <p className="size">Size: {selectedProduct?.size}</p>
+              <p className="size">Size: {selectedProduct?.size}</p>
+              <p className="weight">Weight: {selectedProduct?.weight }</p>
               <p className="price">Rs {selectedProduct?.price}</p>
               <p className="detail">{ selectedProduct?.details}</p>
             <div className="counter">

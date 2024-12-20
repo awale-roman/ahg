@@ -139,13 +139,14 @@ img {
  
 
   &-summary{
-    margin-top: 8px;
+    margin-top: 16px;
 
     .name{
       font-weight: 600;
       color: #4b6860;
+      margin-bottom: 8px;
     }
-    .size, .price{
+    .size, .price, .weight{
       font-size: 12px;
       color: #8ba394;
     }
@@ -172,7 +173,7 @@ img {
         color: #4b6860;
       }
 
-      .size, .price, .counter, .rate, .quantity{
+      .size, .price, .counter, .rate, .quantity, .weight{
         margin-bottom: 10px;
       }
 
