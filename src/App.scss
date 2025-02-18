@@ -52,6 +52,13 @@ img {
     gap: 20px;
   }
 
+  .navlink{
+    a{
+      text-decoration: none;
+      color: white;
+    }
+  }
+
   .back-btn{
     display: flex;
     align-items: center;
@@ -191,6 +198,20 @@ img {
       }
     }
   }
+
+}
+
+.aboutus{
+  padding: 60px 0;
+
+  h2{
+    margin-bottom: 24px;
+  }
+
+  h3, p{
+    margin-bottom: 16px;
+  }
+  
 
 }
 

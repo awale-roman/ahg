@@ -1,5 +1,6 @@
+import { Link, useNavigate } from "react-router";
+
 import { FaArrowLeft } from "react-icons/fa6";
-import { useNavigate } from "react-router";
 
 const Header = () => {
  
@@ -14,16 +15,21 @@ const Header = () => {
       <div className="container">
         <ul>
           <li>
-            <a href="/">
+            <Link to="/">
             <h1 className="logo"><img src={'/assets/image/logo.png'} alt="logo" /></h1>
-            </a>
+            </Link>
           </li>
+
 
           <li>
-        <p className="title">Art Handmade Gallery</p>
-
-
+          <p className="title">Art Handmade Gallery</p>
           </li>
+
+          <li className="navlink">
+            <Link to="/aboutus">About Us</Link>
+          </li>
+
+
           {window.location.pathname !== '/' &&(
           <li>
 

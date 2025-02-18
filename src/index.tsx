@@ -2,10 +2,11 @@ import './index.scss';
 
 import { BrowserRouter, Route, Routes } from 'react-router';
 
-import App from './App';
-import DetailPage from './pages/DetailPage';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import App from './App';
+import AboutUs from './pages/AboutUs';
+import DetailPage from './pages/DetailPage';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -16,7 +17,9 @@ root.render(
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<App />} />
-      <Route path='/detailpage/:productId' element={<DetailPage />} />
+        <Route path='/detailpage/:productId' element={<DetailPage />} />
+      <Route path='/aboutus' element={<AboutUs />} />
+        
     </Routes>
     </BrowserRouter>
   </React.StrictMode>

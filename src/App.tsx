@@ -3,6 +3,7 @@ import './App.scss';
 import Footer from './component/footer';
 import Header from './component/Header';
 import ProductList from './component/Product';
+// import Slider from './component/Slider';
 import products from './helpers/data';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      {/* <Slider /> */}
       <ProductList products={products} />
       <Footer />
     </div>
