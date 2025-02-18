@@ -47,7 +47,7 @@ const products = [
         title: "Tibetan Singing Bowl",
         details: "A Tibetan singing bowl is a metal or crystal bowl that produces a deep, resonant tone when struck or circled with a mallet",
         size: "",
-        price: 0,
+        price: 12000,
         qty: 0,
         colors: ['copper'],
         images: ['singingBowl1.jpg','singingBowl2.jpg']
