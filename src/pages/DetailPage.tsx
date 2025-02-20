@@ -1,11 +1,11 @@
 import { FaMinus, FaPlus } from "react-icons/fa";
 
+import { useState } from "react";
+import { useParams } from "react-router";
 import Footer from "../component/footer";
 import Header from "../component/Header";
-import { capitalizeFirstLetter } from "../helpers/functions";
 import products from "../helpers/data";
-import { useParams } from "react-router";
-import { useState } from "react";
+import { capitalizeFirstLetter } from "../helpers/functions";
 
 const DetailPage = () => {
   const [counter, setCounter] = useState(1);
@@ -47,57 +47,54 @@ const DetailPage = () => {
   return (
     <>
       <Header />
-    <div className="product-detail-wrapper">
+        <div className="product-detail-wrapper">
+          <div className="container">
+              <div className="product-detail">
+                <div className="product-images">
+                  {/* Bigger Images */}
+                  {!!selectedProduct?.images && selectedProduct.images.length > 0 && selectedProduct?.images.map((image, index) => (
+                    
+                      <figure key={index} id={`${selectedProduct?.title}-img-${index}`}>
+                        <img src={`/assets/image/products/${image}`} className="product-img" alt={`${selectedProduct?.title}}`} />
+                      </figure>
+                    
+                    
+                  ))}
 
-            <div className="container">
-
-          <div className="product-detail">
-            <div className="product-images">
-              {/* Bigger Images */}
-              {!!selectedProduct?.images && selectedProduct.images.length > 0 && selectedProduct?.images.map((image, index) => (
-                
-                  <figure key={index} id={`${selectedProduct?.title}-img-${index}`}>
-                    <img src={`/assets/image/products/${image}`} className="product-img" alt={`${selectedProduct?.title}}`} />
-                  </figure>
-                 
-                
-              ))}
-
-              <div className="thumbs">
-              {/* Smaller Thumbs to click */}
-              {!!selectedProduct?.images && selectedProduct.images.length > 0 && selectedProduct?.images.map((image, index) => (
-                <>
-               
-                  <a href={`#${selectedProduct?.title}-img-${index}`}>
-                    <img src={`/assets/image/products/${image}`} className="product-img" alt={`${selectedProduct?.title}}`} />
-                  </a>
-                </>
-              ))}
+                    <div className="thumbs">
+                    {/* Smaller Thumbs to click */}
+                    {!!selectedProduct?.images && selectedProduct.images.length > 0 && selectedProduct?.images.map((image, index) => (
+                      <>
+                    
+                        <a href={`#${selectedProduct?.title}-img-${index}`}>
+                          <img src={`/assets/image/products/${image}`} className="product-img" alt={`${selectedProduct?.title}}`} />
+                        </a>
+                      </>
+                    ))}
+                    </div>
                 </div>
-              </div>
-            <div className="product-info">
+                <div className="product-info">
 
-            <p className="name">{capitalizeFirstLetter(selectedProduct?.title || '')}</p>
-              <p className="size">Size: {selectedProduct?.size}</p>
-              <p className="weight">Weight: {selectedProduct?.weight }</p>
-              <p className="price">Rs {selectedProduct?.price}</p>
-              <p className="detail">{ selectedProduct?.details}</p>
-            <div className="counter">
-              <p className="quantity">Quantity</p>
-              <div className="counter-handle">
-
-              <button onClick={handleDecrement} disabled={decreaseButtonDisability}><FaMinus /></button> 
-              {counter} 
-              <button onClick={()=>{handleIncrement(selectedProduct.qty)}} disabled={increaseButtonDisability}><FaPlus /></button>  </div>
-              </div>
-            <p className="rate">{'Total Price: Rs ' + calculateTotal(selectedProduct.price, counter)}</p>
-            </div>
-     </div>
+                <p className="name">{capitalizeFirstLetter(selectedProduct?.title || '')}</p>
+                <p className="size">Size: {selectedProduct?.size}</p>
+                <p className="weight">Weight: {selectedProduct?.weight }</p>
+                <p className="price">Rs {selectedProduct?.price}</p>
+                <p className="detail">{selectedProduct?.details}</p>
+                  
+                <div className="counter">
+                  <p className="quantity">Quantity</p>
+                  <div className="counter-handle">
+                      <button onClick={handleDecrement} disabled={decreaseButtonDisability}><FaMinus /></button> 
+                      {counter} 
+                      <button onClick={() => { handleIncrement(selectedProduct.qty) }} disabled={increaseButtonDisability}><FaPlus /></button>
+                  </div>
                 </div>
+                <p className="rate">{'Total Price: Rs ' + calculateTotal(selectedProduct.price, counter)}</p>
+              </div>
             </div>
-
-                <Footer />
-
+          </div>
+        </div>
+      <Footer />
     </>
 
   )

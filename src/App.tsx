@@ -9,12 +9,12 @@ import products from './helpers/data';
 function App() {
 
   return (
-    <div className="App">
+    <>
       <Header />
       {/* <Slider /> */}
       <ProductList products={products} />
       <Footer />
-    </div>
+    </>
   );
 }
 
